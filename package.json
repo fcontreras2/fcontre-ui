@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-  "serve-storybook": "serve storybook-static"
+    "serve-storybook": "serve storybook-static"
   },
   "author": "",
   "license": "ISC",
@@ -26,5 +26,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "serve": "^14.1.2"
   }
 }
