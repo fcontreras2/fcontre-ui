@@ -1,0 +1,27 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+import FormSelect from "./index";
+
+<Meta title="Components/Form/FormSelect" component={FormSelect} />
+
+export const Template = (args) => <FormSelect {...args} />;
+
+## FormSelects
+
+
+El siguiente componente es una extesión de la librería [react-select](https://react-select.com/home) 
+
+El siguiente componente es una extesión de la librería [react-select](https://react-select.com/home) 
+
+El siguiente componente es una extesión de la librería [react-select](https://react-select.com/home) 
+
+<Canvas>
+  <Story 
+  name="doc"
+    args={{ 
+      options:[{label: 'Option 1', value: 1}]
+    }}>
+    {Template.bind({})}
+   </Story>
+
+</Canvas>

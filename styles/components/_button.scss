@@ -1,0 +1,21 @@
+$variants: "primary", "secondary";
+
+.btn {
+  @apply px-4 rounded relative py-2 transition duration-500 text-white font-bold border-2 outline-none;
+  @each $variant in $variants {
+    &.#{$variant} {
+      background-color: theme("colors.#{$variant}.500");
+      border-color: theme("colors.#{$variant}.500");
+      &:hover,
+      &:active,
+      &:focus {
+        overflow: hidden;
+        border-color: theme("colors.#{$variant}.700");
+      }
+    }
+  }
+
+  &:hover {
+    @apply bg-opacity-40;
+  }
+}

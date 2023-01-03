@@ -1,33 +1,76 @@
 {
   "name": "fcontre-ui",
-  "version": "1.0.0",
+  "version": "0.6.0",
   "description": "fcontreras2 libray ui",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "serve-storybook": "serve storybook-static"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "serve-storybook": "serve storybook-static",
+    "rollup": "rollup -c",
+    "build": "tsup src/index.ts --dts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.7",
+    "@mdx-js/react": "^2.2.1",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
     "@storybook/addon-actions": "^6.5.15",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-interactions": "^6.5.15",
     "@storybook/addon-links": "^6.5.15",
-    "@storybook/builder-webpack4": "^6.5.15",
-    "@storybook/manager-webpack4": "^6.5.15",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/mdx2-csf": "^0.0.3",
     "@storybook/react": "^6.5.15",
     "@storybook/testing-library": "^0.0.13",
+    "@storybook/theming": "^6.5.15",
     "@types/react": "^18.0.26",
     "babel-loader": "^8.3.0",
+    "postcss": "^8.4.20",
     "react": "^18.2.0",
+    "react-docgen-typescript": "^2.2.2",
+    "react-docgen-typescript-plugin": "^1.0.2",
     "react-dom": "^18.2.0",
+    "rollup": "^3.9.1",
+    "rollup-plugin-dts": "^5.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "serve": "^14.1.2",
+    "storybook-addon-sass-postcss": "^0.1.3",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.2.4",
+    "tsup": "^6.5.0",
     "typescript": "^4.9.4"
   },
+  "peerDependencies": {
+    "react-select": "^5.7.0"
+  },
+  "overrides": {
+    "@mdx-js/react": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  },
+  "resolutions": {
+    "webpack": "^5"
+  },
   "dependencies": {
-    "serve": "^14.1.2"
-  }
+    "react-select": "^5.7.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-scss": "^4.0.0"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "styles"
+  ],
+  "types": "dist/index.d.ts"
 }
