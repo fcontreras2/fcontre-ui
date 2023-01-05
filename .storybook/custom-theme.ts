@@ -6,4 +6,6 @@ export default create({
   brandUrl: 'https://fcontreras2.com',
   brandImage: '/logo.svg',
   brandTarget: '_self',
+  appBg: '#060916',
+  fontBase: 'Poppins, system-ui, sans-serif'
 })

@@ -1,9 +1,10 @@
+@import "../styles/components";
+@import "../styles/utils";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "../styles/components";
-@import "../styles/utils";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -16,4 +17,13 @@
 
 .sbdocs {
   @extend .mdx;
+  font-family: Poppins, system-ui, sans-serif !important;
+  
+  .sbdocs-title {
+    font-family: Poppins, system-ui, sans-serif !important;
+  }
+}
+
+#storybook-explorer-tree {
+  font-family: Poppins, system-ui, sans-serif !important;
 }

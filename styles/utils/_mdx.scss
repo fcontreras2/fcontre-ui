@@ -36,4 +36,36 @@
   p {
     @apply mb-4;
   }
+
+  ul {
+    margin-left: 25px;
+    margin-bottom: 16px;
+    list-style: circle;
+  }
+
+  a {
+    text-decoration: underline;
+    color: theme('colors.secondary.400');
+  }
+
+  blockquote {
+    min-width: 360px;
+    width: max-content;
+    background: #060916;
+    padding: 16px;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    p{
+      margin: 0
+    }
+  }
+  
+  pre {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: #060916;
+    padding: 16px;
+    color: white;
+  }
 }

@@ -51,7 +51,8 @@
     "typescript": "^4.9.4"
   },
   "peerDependencies": {
-    "react-select": "^5.7.0"
+    "react-select": "^5.7.0",
+    "clsx": "^1.2.1"
   },
   "overrides": {
     "@mdx-js/react": {
@@ -63,6 +64,7 @@
     "webpack": "^5"
   },
   "dependencies": {
+    "clsx": "^1.2.1",
     "react-select": "^5.7.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-scss": "^4.0.0"

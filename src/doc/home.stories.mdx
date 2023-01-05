@@ -1,0 +1,72 @@
+import { Meta, Story } from "@storybook/addon-docs";
+
+import imageFile from '../static/logo.png';
+
+<Meta title="Introducción"  />
+
+# Fcontre-ui
+
+![Alt text](/logo.png "title")
+
+La siguiente librería tiene como objetivo poder mantener una base de componentes y utilidades que puedan ser reutilizados de manera rápida y sencilla en cualquier desarrollo.
+
+Los componentes desarrollados en esta librería son parte de conocimiento adquirido en los distintos proyectos en los que he trabajado, de esta manera poder configurar y definir de manera rápida un proyecto frontend.
+
+La base de dicho proyecto se verá implementado en mi Web personal [fcontreras2.com](https://fcontreras2.com), la paleta de colores y estilos de componentes están enfocados en dicho desarrollado. Sin embargo, está enfocado en que estas definiciones puedan ser adaptadas a cualquier otro proyecto.
+
+
+### Librerías
+
+Las siguientes librerías basadas en React son requisitos necesarios para poder hacer uso de fcontre-ui:
+
+- Base
+  - React 
+  - tailwind
+  - typescript
+  - Sass (Scss)
+- Terceros
+  - [react-select](https://react-select.com/)
+
+
+### Instalación
+
+
+*Como prerequisito se debe tener un proyecto previamente configurado con React, tailwind, typescript  , scss*
+
+Luego de crear tu proyecto en react, procede a instalar mediante npm la librería en tu consola con el siguiente comando:
+
+> npm install fcontre-ui
+
+
+Debes ingresar los estilos de fcontre-ui en tu archivo principal de scss.
+
+```
+//src/styles/main.scss
+@import "~fcontre-ui/styles/components";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
+
+Posteriormente podrás hacer uso de cada uno de los componentes de fcontre-ui
+
+**nota:** Cada componente puede tener caracteristicas que pueden ser descritas en su propia documentación
+
+```
+//src/pages/index.tsx
+
+import React from 'react';
+import { Button } from 'fcontre-ui';
+
+const HomePage = () = {
+  return (
+    <div className="w-full">
+      <Button variant="primary">Button </button>
+    </div>
+  )
+}
+
+return default HomePage;
+```

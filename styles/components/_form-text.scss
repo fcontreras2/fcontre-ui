@@ -1,0 +1,65 @@
+.input {
+  @apply border-[1px] w-full border-secondary-700 outline-none rounded-[8px] bg-white transition-colors
+      text-secondary-700 hover:border-secondary-700 px-4 h-12 focus:border-secondary-500;
+
+  /* Chrome, Safari, Edge, Opera */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  &[type='password'] {
+    background: white;
+    &:focus {
+      background: white;
+    }
+  }
+
+  &:not(:placeholder-shown) + .input__placeholder {
+    @apply top-1 text-[12px] text-secondary-300;
+  }
+
+  &:not(:placeholder-shown) {
+    @apply pt-6 pb-[8px];
+  }
+
+  &::placeholder {
+    @apply text-transparent;
+  }
+
+  &__placeholder {
+    @apply absolute top-3 text-[16px]  leading-[24px] text-secondary-300 left-4 pointer-events-none transition-all;
+    &-error {
+      @apply text-secondary-500;
+    }
+  }
+
+  // &__error {
+  //   @apply border-primary-re;
+  // }
+
+  // &__error-label {
+  //   @apply top-1 text-[12px] leading-[16px] text-red-500;
+  // }
+
+  // &__icon-right {
+  //   @apply absolute right-4 top-4 text-secondary-600;
+  //   &-error {
+  //     @apply text-secondary-500;
+  //   }
+  // }
+
+  // &__spin-loader {
+  //   @apply h-2 w-2 top-[20px] animate-spin;
+  // }
+
+  &:disabled {
+    @apply cursor-not-allowed bg-secondary-300 text-secondary-500 border-secondary-500;
+  }
+}
