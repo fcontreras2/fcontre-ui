@@ -26,6 +26,7 @@ export const CustomClass = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 CustomClass.args = {
   placeholder: 'Placeholder form-text',
-  className: 'bg-secondary-700 text-white'
+  className: 'bg-secondary-700 text-white',
+  containerClassName: 'w-1/2'
 };
 
