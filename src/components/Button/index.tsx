@@ -12,7 +12,7 @@ export interface ButtonProps {
   children: JSX.Element | JSX.Element[] | React.ReactNode;
   type?: "submit" | "button";
   className?: string;
-  variant: typeof variantButton[number] | string;
+  variant?: typeof variantButton[number] | string;
 }
 
 /**
@@ -22,7 +22,10 @@ export interface ButtonProps {
  */
 const Button = ({ children, variant, className, ...props }: ButtonProps) => {
   return (
-    <button className={clsx(className,`btn`, variant)} {...props}>
+    <button
+      className={clsx(`btn`, variant && `btn-${variant}`, className)}
+      {...props}
+    >
       {children}
     </button>
   );

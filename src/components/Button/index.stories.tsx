@@ -23,7 +23,7 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   children: 'Button',
-  variant: 'primary'
+  variant: 'primary',
 };
 
 export const Secondary = Template.bind({});
@@ -49,3 +49,12 @@ SecondaryGradient.args = {
   children: 'Button',
   variant: 'secondary-gradient'
 };
+
+export const CustomClass = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+CustomClass.args = {
+  children: 'Button',
+  variant: 'primary',
+  className: 'bg-[#000] rounded-none text-white'
+};
+

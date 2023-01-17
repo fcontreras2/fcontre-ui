@@ -1,18 +1,16 @@
-.btn {
-  @apply px-4 rounded relative py-2 transition duration-500 text-white font-bold outline-none;
-  &.primary-gradient {
-    @apply bg-gradient-to-tr from-primary-500 to-secondary-500 border-none;
-    &:hover,
-    &:active {
-      @apply shadow-md shadow-primary-500 ;
-    }
-  }
 
-  &.secondary-gradient {
-    @apply bg-gradient-to-tr from-secondary-500 to-primary-500 border-none;
-    &:hover,
-    &:active {
-      @apply shadow-md shadow-primary-500;
-    }
+.btn-primary-gradient {
+  @apply px-4 rounded relative py-2 transition duration-500 text-white font-bold outline-none bg-gradient-to-tr from-primary-500 to-secondary-500 border-none;
+  &:hover,
+  &:active {
+    @apply shadow-md shadow-primary-500;
+  }
+}
+
+.btn-secondary-gradient {
+  @apply px-4 rounded relative py-2 transition duration-500 text-white font-bold outline-none bg-gradient-to-tr from-secondary-500 to-primary-500 border-none;
+  &:hover,
+  &:active {
+    @apply shadow-md shadow-primary-500;
   }
 }
