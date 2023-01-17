@@ -13,6 +13,7 @@ export interface ButtonProps {
   type?: "submit" | "button";
   className?: string;
   variant?: typeof variantButton[number] | string;
+  onClick?: (e: React.PointerEvent<HTMLButtonElement>) => void;
 }
 
 /**

@@ -1,11 +1,9 @@
 $variants: "primary", "secondary";
 
-@layer components {
-  .btn {
-    @apply px-4 rounded relative py-2 transition duration-500 text-white font-bold border-2 outline-none;
-    &:hover {
-      @apply bg-opacity-40;
-    }
+.btn {
+  @apply px-4 rounded relative py-2 transition duration-500 text-white font-bold border-2 outline-none;
+  &:hover {
+    @apply bg-opacity-40;
   }
 }
 
