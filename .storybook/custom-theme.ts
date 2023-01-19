@@ -7,5 +7,5 @@ export default create({
   brandImage: '/logo.svg',
   brandTarget: '_self',
   appBg: '#060916',
-  fontBase: 'Poppins, system-ui, sans-serif'
+  fontBase: 'Poppins, system-ui, sans-serif',
 })

@@ -1,6 +1,6 @@
 {
   "name": "fcontre-ui",
-  "version": "0.9.0",
+  "version": "0.17.0",
   "description": "fcontreras2 libray ui",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -51,8 +51,9 @@
     "typescript": "^4.9.4"
   },
   "peerDependencies": {
-    "react-select": "^5.7.0",
-    "clsx": "^1.2.1"
+    "@svgr/webpack": "^6.5.1",
+    "clsx": "^1.2.1",
+    "react-select": "^5.7.0"
   },
   "overrides": {
     "@mdx-js/react": {
@@ -64,10 +65,12 @@
     "webpack": "^5"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.5.1",
     "clsx": "^1.2.1",
     "react-select": "^5.7.0",
     "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-scss": "^4.0.0"
+    "rollup-plugin-scss": "^4.0.0",
+    "tsconfig-paths-webpack-plugin": "^4.0.0"
   },
   "main": "dist/index.js",
   "files": [
