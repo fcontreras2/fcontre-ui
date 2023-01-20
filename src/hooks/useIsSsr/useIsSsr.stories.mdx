@@ -1,0 +1,27 @@
+import { Meta, Story } from "@storybook/addon-docs";
+
+<Meta
+  title="Hooks/useIsSsr"
+  component={null}
+/>
+
+# useIsSsr
+
+Varificar si se está ejecutando el servidor
+
+
+```
+import React;
+import { useIsSsr } from 'fcontre-ui';
+
+const CustomComponent = () = {
+  
+ const isSsr = useIsSsr();
+  if (isSsr) return null;
+
+  return <div>...</div>;
+  
+}
+
+return default CustomComponent;
+```

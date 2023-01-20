@@ -1,0 +1,33 @@
+import { Meta, Story } from "@storybook/addon-docs";
+
+<Meta
+  title="Hooks/useDisabledScroll"
+  component={null}
+/>
+
+# useDisabledScroll
+
+Desactivar el scroll del window dada un valor booleano. El hook agregará al elemento body las clases de desactivar scroll a un element de tailwind.
+
+  - overflow-y-hide
+  - overflow-y-auto
+
+```
+import React, { useState } from 'react';
+import { FormText, useDebounce } from 'fcontre-ui';
+
+const CustomComponent = () = {
+  
+  ...
+  
+  const [isOpenModal, setIsOpenModal] = useState(true);
+  useDisabledScroll(isOpenModal);
+  
+  ...
+
+  return (...)
+  
+}
+
+return default CustomComponent;
+```

@@ -1,0 +1,1 @@
+export { default as IconProvider, IconContext, iconTypes } from './icon.context';

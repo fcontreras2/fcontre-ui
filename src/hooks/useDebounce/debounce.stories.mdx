@@ -1,0 +1,36 @@
+import { Meta, Story } from "@storybook/addon-docs";
+
+<Meta
+  title="Hooks/useDebounce"
+  component={null}
+/>
+
+# useDebounce
+
+Hooks que permite la verficación si un valor ha dejado de cambiar dado un tiempo de espera (delay).
+
+```
+import React, { useState } from 'react';
+import { FormText, useDebounce } from 'fcontre-ui';
+
+const CustomComponent = () = {
+  const [text, setText] = useState();
+  const searching = useDebounce(text, 2000);
+
+  useEffect(() => {
+    console.log("stoped typing, searching....");
+  },[searching])
+
+  return (
+    <div className="w-full">
+      <FormText
+        id="custom-input"
+        name="custom-input"
+        variant="primary"
+        onChage={setText} />
+    </div>
+  )
+}
+
+return default CustomComponent;
+```

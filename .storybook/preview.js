@@ -2,7 +2,7 @@ import React from "react";
 
 import "../src/main.scss";
 import icons from "../src/icons";
-import IconProvider from '../src/components/Icon/index.context';
+import IconProvider from '../src/providers/icon.context';
 
 export const decorators = [
   (Story) => (
@@ -18,6 +18,11 @@ export const parameters = {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
+    },
+  },
+  options: {
+    storySort: {
+      order: ['Introducción', 'Components', 'Hooks'],
     },
   },
 };

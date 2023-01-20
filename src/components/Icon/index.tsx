@@ -1,5 +1,5 @@
 import React from "react";
-import { IconContext, iconTypes } from "./index.context";
+import { IconContext, iconTypes } from "../../providers/icon.context";
 
 export interface IconProps {
   name: string;
@@ -17,8 +17,6 @@ export const Icon = ({ name, ...props }: IconProps) => {
         const IconToRender = (icons[name as any]
           ? icons[name as any]
           : icons[0]) as unknown as iconTypes;
-
-          console.log(ctx)
 
         return <IconToRender.Component {...props} />;
       }}
