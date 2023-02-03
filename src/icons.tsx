@@ -1,5 +1,4 @@
-import React from "react";
-import { iconTypes } from "./components/Icon/index.context";
+import { iconTypes } from "./providers/icon.context";
 
 import { ReactComponent as Article } from "./icons/ic_article.svg";
 import { ReactComponent as Calendar } from "./icons/ic_calendar.svg";
