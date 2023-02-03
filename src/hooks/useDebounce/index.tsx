@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
-
+import { useEffect, useState } from "react";
+import useIsSsr from '../useIsSsr';
 /**
  * Evento que permite identificar cuando un elemento ha cambiado luego de un delay de espera
  */
-export const useDebounce = (value: string, delay: number) => {
-  const [debounceValue, setDebounceValue] = useState(value);
+function useDebounce<T>(value: T, delay: number) {
+  const [debounceValue, setDebounceValue] = useState<T>();
+  const IsSrr = useIsSsr();
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebounceValue(value);
